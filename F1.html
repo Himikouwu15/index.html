@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fórmula 1 - El Rey de los Deportes</title>
+
+
+
+    <style>
+        /* Reset de estilo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #bce1ec;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #000;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #e60000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #e60000;
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://www.f1.com/sites/default/files/styles/hero_image/public/images/2023/01/19/f1-hero-2023.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e60000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .f1-teams, .f1-circuits, .f1-pilots {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .f1-teams div, .f1-circuits div {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .f1-teams img, .f1-circuits img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .f1-pilots div {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .f1-pilots img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .f1-pilots p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        footer a {
+            color: #e60000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Barra de separación entre secciones */
+        .section-bar {
+            width: 100%;
+            height: 3px;
+            background-color: #e60000;
+            margin: 40px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-0.png">
+    <h1>Fórmula 1 - El Rey de los Deportes</h1>
+</header>
+
+<nav>
+    <a href="#equipos">Equipos</a>
+    <a href="#circuitos">Circuitos</a>
+    <a href="#pilotos">Pilotos</a>
+    <a href="#checo">Checo Pérez</a>
+    <a href="#historia">Historia</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero">
+    <h2>Velocidad, Tecnología, Emoción</h2>
+    <p>La Fórmula 1 abreviada como F1, es el pináculo del automovilismo deportivo y una de las competiciones más prestigiosas del mundo, su historia se remonta a la década de 1950 cuando la federación internacional del automóvil fia desarrolló un conjunto de regulaciones para carreras de automóviles de un solo asiento conocidas como fórmula 1 la primera carrera oficial de fórmula 1 se realizó en 1950 en el circuito de Silverstone en el Reino Unido desde entonces la fórmula 1 ha evolucionado significativamente pasando de carreras en circuitos. improvisados ​​en carreteras públicas a competiciones en circuitos permanentes especialmente diseñados para la velocidad y la seguridad a lo largo de los fórmula 1 ha sido testigo de numerosos cambios en regulaciones técnicas equipos pilotos y circuitos grandes leyendas como Juan Manuel fangio Michael schumacher Fernando Alonso y Lewis Hamilton han dejado su huella en la historia del deporte con emocionantes batallas en la pista y logros impresionantes hoy en día la fórmula 1 es un espectáculo global que se celebra en diferentes continentes y atrae a millones de espectadores en todo el mundo con de vanguardia velocidad vertiginosa y una pasión inigualable la fórmula 1 continúa haciendo el pináculo del automovilismo deportivo y una de las competiciones más emocionantes del planeta.</p>
+</section>
+
+<div class="container">
+
+    <!-- Equipos -->
+    <section id="equipos">
+        <h2>Equipos de Fórmula 1</h2>
+        <p>La Fórmula 1 alberga a los mejores equipos del mundo, quienes luchan por el campeonato mundial cada temporada. Estos equipos no solo compiten por victorias en cada carrera, sino que también representan a marcas y fabricantes de autos con una larga historia de innovación y excelencia tecnológica. Las escuderías de la Fórmula 1 es un selecto club de equipos de pilotos con licencia para disputar las carreras que componen el Mundial de F1. La mayoría de estas escuderías están asociadas a grandes marcas del automóvil, aunque cada vez más están vinculadas a grandes patrocinadores que invierten fortunas para poder participar en "el gran circo". Cada escudería compite en carrera con dos pilotos , y disponen de otros tantos pilotos probadores. A partir de ahí, cada escudería dispone de un organigrama distinto, aunque todas cuentan con multitud de ingenieros , que realizan un trabajo casi tan importante como el de los pilotos. En F1 al día te mostramos las escuderías más relevantes, pudiendo consultar sus mejores resultados históricos en la Fórmula 1.</p>
+        
+
+        <div class="f1-teams">
+            <!-- Escuderías -->
+            <div>
+                <img src="https://e00-especiales-marca.uecdn.es/motor/images/formula1/escuderias/2024/ferrari/coche00.jpg">
+                <p><strong>Ferrari</strong>: Fundado en 1929, uno de los equipos más históricos, con muchos campeonatos y leyendas de la F1. Primer Gran Premio: Mónaco 1950.
+
+                    Nacionalidad: italiana.
+                    
+                    Fundador: Enzo Ferrari. </p>
+                <p><strong>Web oficial:</strong> <ul>
+                    <li><a href="https://www.ferrari.com/en-ES/formula1">https://www.ferrari.com/en-ES/formula1</a></li> </ul></p>
+            </div>
+            <div>
+                <img src="https://racewear.com.mx/cdn/shop/collections/mercedesW14_f92f7c2a-473a-47f0-9033-1b3e2ba5e03d.jpg?v=1736320951&width=3840">
+                <p><strong>Mercedes</strong>: Dominante en la última década, ha construido uno de los equipos más exitosos en la historia reciente de la F1.Primer Gran Premio: Francia 1954.
+
+                    Nacionalidad: alemana.
+                    
+                    Fundador: Gottlieb Daimler (1834-1900) - Karl Benz (1844-1929).</p>
+      <p><strong>Web oficial:</strong><ul>
+        <li><a href="http://www.mercedes-amg-f1.com/">http://www.mercedes-amg-f1.com/</a></li> </ul></p>
+                </div>
+                <div>
+                    <img src="https://media.diariolasamericas.com/p/d08ecb4d1626a921b0bef083d7d02bb3/adjuntos/216/imagenes/100/187/0100187004/williamssainzjpg.jpg" alt="Williams">
+                    <p><strong>Williams</strong>: Fundado en 1977, Williams ha sido uno de los equipos más exitosos en la historia de la Fórmula 1.Primer Gran Premio: Argentina 1975.
+
+                        Nacionalidad: británica.
+                    
+                        Fundador: Sir Frank Williams (1942-2021).</p>
+                        <p><strong>Web oficial:</strong><ul>
+                            <li><a href="http://www.williamsf1.com/">http://www.williamsf1.com/</a></li> </ul></p>
+                </div>
+                <div>
+                <img src="https://cdn.clarosports.com/clarosports/2023/03/helmut-marko-revela-el-plan-para-checo-perez-y-max-verstappen-traynor-reuters-174925-1024x576.jpg" alt="Red Bull Racing">
+                <p><strong>Red Bull Racing</strong>: Conocidos por su enfoque innovador y múltiples campeonatos en los últimos años.Primer Gran Premio: Australia 2005.
+
+                    Nacionalidad: austriaca.Fundador: Dietrich Mateschitz (1944-2022).</p>
+                    <p><strong>Web oficial:</strong><ul>
+                        <li><a href="http://www.redbullracing.com/">http://www.redbullracing.com/</a></li> </ul></p>
+            </div>
+            <div>
+                <img src="https://acnews.blob.core.windows.net/imgnews/paragraph/NPAZ_8677f95da4e74432add44f1500cc61fb.webp" alt="McLaren">
+                <p><strong>McLaren</strong>: McLaren dio sus primeros pasos en la Fórmula 1 en 1966,con su fundador, el legendario Bruce McLaren. Además de haber contado en sus filas con algunos de los mejores pilotos de la historia de la F1, incluyendo a Emerson Fittipaldi, Niki Lauda, James Hunt, Mika Hakkinen, Lewis Hamilton y por supuesto la dupla explosiva conformada por Ayrton Senna y Alain Prost, que tantas emociones brindó a los aficionados a principios de los noventa, con los motores Honda.</p>
+                <p><strong>Web oficial:</strong><ul>
+                    <li><a href="http://mclaren.com/formula1">http://mclaren.com/formula1</a></li> </ul></p>
+            </div>
+            <div>
+                <img src="https://cdn-9.motorsport.com/images/mgl/2Qz51P3Y/s8/alpine-a523-1.jpg" alt="Alpine">
+                <p><strong>Alpine</strong>: Anteriormente conocido como Renault, este equipo tiene una rica historia en la F1 y ha tenido grandes éxitos.Primer Gran Premio: Baréin 2021.
+
+                    Nacionalidad: francesa.
+                    
+                    Fundador: Jean Rédélé (1922 - 2007).</p>
+                    <p><strong>Web oficial:</strong><ul>
+                        <li><a href="https://www.alpine-cars.co.uk/formula-1/f1-news.html">https://www.alpine-cars.co.uk/formula-1/f1-news.html</a></li> </ul></p>
+            </div>
+            <div>
+                <img src="https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fcloudfront-eu-central-1.images.arcpublishing.com%2Fprisa%2FCRNYPXRHFRF3FLM26OWYIK3COI.jpg?auth=b26a25d79755b0a42903ecf7c727f1810a4b55c5239707ee9bf4437a6f50da47&width=1200">
+                <p><strong>Aston Martin</strong>: Fundado en 2021, el equipo se ha destacado por su estilo único y sus importantes mejoras tecnológicas.Primer Gran Premio: Países Bajos 1959.
+
+                    Nacionalidad: británica.
+                    
+                    Fundador: Lionel Martin (1878 - 1945).</p>
+                    <p><strong>Web oficial:</strong><ul>
+                        <li><a href="https://www.astonmartinf1.com/en-GB/">https://www.astonmartinf1.com/en-GB/</a></li> </ul></p>
+            </div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/c44-2-65c133f00c19b.jpeg" alt="Alfa Romeo">
+                <p><strong>Alfa Romeo(Stake)</strong>: Con un legado histórico en F1, el equipo ha sido competitivo en las últimas temporadas. Primer Gran Premio: Sudáfrica 1993.
+
+                    Nacionalidad: suiza.
+                    
+                    Fundador: Peter Sauber (1943).</p>
+                    <p><strong>Web oficial:</strong><ul>
+                        <li><a href="https://www.sauber-group.com/">https://www.sauber-group.com/</a></li> </ul></p>
+            </div>
+            <div>
+                <img src="https://sportsbase.io/images/gpfans/copy_1200x800/ca82514cb00cf063de8e8db7904660dc12cff122.jpg" alt="Haas F1">
+                <p><strong>Haas F1</strong>: Fundado en 2016, es uno de los equipos más jóvenes de la parrilla, pero con una gran ambición.Primer Gran Premio: Australia 2016.
+
+                    Nacionalidad: estadounidense.
+                    
+                    Fundador: Gene Haas (1952).</p>
+                    <p><strong>Web oficial:</strong><ul>
+                        <li><a href="https://www.haasf1team.com/">https://www.haasf1team.com/</a></li> </ul></p>
+            </div>
+            <div>
+                <img src="https://www.kitcar43.com/wp-content/uploads/2025/01/S9534-1.jpg" alt="RB F1">
+                <p><strong>Visa Cashapp RB</strong>: 
+
+                    Debut: 2006
+                    
+                    País: ItaliaPrimer Gran Premio: Baréin 2006.
+
+                    Nacionalidad: italiana.
+                    
+                    Fundador: Dietrich Mateschitz (1944 - 2022).
+                    
+                    Escudería antecesora: Minardi (1985-2005) --> Toro Rosso (2006-2019) --> AlphaTauri (2020-2023) --> Visa CashApp RB (2024-).</p>
+                    <p><strong>Web oficial:</strong><ul>
+                        <li><a href="https://www.visacashapprb.com/">https://www.visacashapprb.com/</a></li> </ul></p>
+            </div>
+           
+        </div>
+
+        <div class="section-bar"></div>
+    </section>
+
+    <!-- Circuitos -->
+    <section id="circuitos">
+        <h2>Circuitos Legendarios</h2>
+        <p>La Fórmula 1 recorre los circuitos más desafiantes y espectaculares del mundo. Cada trazado tiene su propia historia, y cada curva se convierte en un desafío para los pilotos que buscan la victoria.</p>
+
+        <div>
+            <img src="https://e9t9dc498r8.exactdn.com/wp-content/uploads/2025/01/F1-2025-Calendario-1.jpg?strip=all&lossy=1&ssl=1" alt="Circuitos">
+           
+        </div>
+        <div class="f1-circuits">
+            <!-- Circuitos -->
+            <div>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_940004-MLM77929708412_082024-O.webp" alt="Circuito de Australia">
+                <p><strong>Australia</strong>: El circuito de Albert Park, también llamado circuito de Melbourne, es un circuito de carreras que se monta en los alrededores del lago Albert Park, al sur de la ciudad de Melbourne, Australia. </p>
+            </div>
+            <div>
+                <img src="https://ih1.redbubble.net/image.2932666320.7577/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="Circuito de china">
+                <p><strong>Shanghái </strong>: El Circuito Internacional de Shanghái es un autódromo ubicado en Shanghái, China, construido en 2003 con el objetivo de albergar el Gran Premio de China de Fórmula 1 a partir del año 2004​ </p>
+            </div>
+            <div>
+                <img src="https://i.etsystatic.com/34449634/r/il/f58282/3728642202/il_570xN.3728642202_ssei.jpg" alt="Circuito de Suzuka">
+                <p><strong>Suzuka</strong>: El Circuito de Suzuka, oficialmente Suzuka International Racing Course, ​ es un autódromo localizado en Suzuka, en la prefectura de Mie, Japón, unos 60 km al suroeste de la ciudad de Nagoya. Ha sido sede del Gran Premio de Japón de Fórmula 1 desde el año 1987 hasta el año 2006 y desde 2009 en adelante.</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/f0/13/d9/f013d90e61bce0ebde6498840b30f5f8.jpg" alt="Circuito de Baréin">
+                <p><strong>Baréin</strong>:El Circuito Internacional de Baréin, también conocido como Circuito Internacional de Sakhir, es un autódromo ubicado en la zona desértica de Sakhir, dentro de la Gobernación Sur del país, a aproximadamente 31 km de la capital Manama. </p>
+            </div>
+            <div>
+                <img src="https://static.vecteezy.com/system/resources/previews/035/033/039/non_2x/jeddah-street-circuit-saudi-arabia-map-poster-vector.jpg" alt="Circuito de Saudi">
+                <p><strong>Jeddah </strong>:El circuito de la Corniche de Yeda es un circuito urbano de carreras ubicado en Yeda, Arabia Saudita.​ Fue anunciado en diciembre de 2020 y es sede del Gran Premio de Arabia Saudita de Fórmula 1 desde 2021.​El autódromo se construyó en la corniche de Yeda y fue diseñado por el ingeniero Hermann Tilke.​​</p>
+            </div>
+            <div>
+                <img src="https://static.displate.com/857x1200/displate/2023-01-20/e9374a81307030bec22fc3a3b5a15b19_7845d2883abc0ee60c64cadb7bf6051c.jpg" alt="Circuito de Miami">
+                <p><strong>Miami </strong>:El Autódromo Internacional de Miami es un circuito urbano de carreras ubicado en Miami Gardens, Estados Unidos.​ Fue anunciado en abril de 2021 y es sede del Gran Premio de Miami de Fórmula 1 desde 2022.​​</p>
+            </div>
+            <div>
+                <img src="https://onlyposter.it/cdn/shop/files/IMOLA.jpg?v=1698707279" alt="Circuito de Imola">
+                <p><strong>Imola</strong>: El Autodromo Enzo e Dino Ferrari, conocido comúnmente como Circuito de Imola, es un autódromo de 4,9 km situado en Imola, región de Emilia-Romaña, Italia, unos 30 km al sureste de la ciudad de Bolonia.</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/pod_public/1300/137331.jpg" alt="Circuito de Mónaco">
+                <p><strong>Mónaco</strong>: El Gran Premio de Mónaco es uno de los eventos más exclusivos y prestigiosos del calendario de la F1.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13LoBuDzYgqdEfKv-auuObEL3qfS_yjPeMTnzZ39Cf_6_pz_3KJ5G-czG_FGg2zwfjRE&usqp=CAU" alt="Circuito de Barcelona">
+                <p><strong>Barcelona</strong>: El Circuito de Cataluña es conocido por su diversidad de curvas y es el escenario de pruebas importantes para los equipos.</p>
+            </div>
+            <div>
+                <img src="https://ih1.redbubble.net/image.839802536.1955/fposter,small,wall_texture,square_product,600x600.u2.webp" alt="Circuito de Montreal">
+                <p><strong>Montreal</strong>: El Circuito Gilles Villeneuve ofrece carreras emocionantes, con adelantamientos arriesgados y una atmósfera electrizante.</p>
+            </div>
+            <div>
+                <img src="https://racingpoint.cl/cdn/shop/files/WhatsAppImage2024-02-17at00.02.02-Photoroom.jpg?crop=center&height=600&v=1715658702&width=600" alt="Redbull ring">
+                <p><strong>Spielberg</strong>: Red Bull Ring es un autódromo ubicado en la villa de Spielberg, cerca al poblado de Zeltweg, estado de Estiria, Austria, a unos 50 km al oeste de la ciudad de Graz. Ha recibido varios de los principales campeonatos mundiales y europeos de deporte motor.</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/pod_public/1300/136508.jpg" alt="Circuito de Silverstone">
+                <p><strong>Silverstone</strong>: El Circuito de Silverstone es conocido como la "casa de la Fórmula 1" debido a su historia con el deporte.</p>
+            </div>
+            
+            <div>
+                <img src="https://baulvintage.com/wp-content/uploads/2021/08/SPA-CIRCUIT-PORTADA-V1.jpg" alt="Circuito de Spa-Francorchamps">
+                <p><strong>Spa-Francorchamps</strong>: Uno de los circuitos más desafiantes y espectaculares, famoso por su clima impredecible.</p>
+            </div>
+            <div>
+                <img src="https://ih1.redbubble.net/image.4989091230.4358/fposter,small,wall_texture,square_product,600x600.jpg" alt="Circuito de Hungaroring">
+                <p><strong>Hungaroring</strong>: Hungaroring es un autódromo localizado en Mogyoród, Hungría, a 30 kilómetros del centro de la ciudad de Budapest. La construcción del circuito empezó el 1 de octubre de 1985 y fue terminado en ocho meses.</p>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/4b/a8/dd/4ba8dd863135754524a763bd16f39cfd.jpg" alt="Circuito de Zandvoort">
+                <p><strong>Zandvoort</strong>: El Circuito de Zandvoort, oficialmente Circuit Park Zandvoort, es un autódromo situado cerca de Zandvoort y Haarlem, Países Bajos, sobre el Mar del Norte, unos 15 km al oeste de la ciudad de Ámsterdam. El circuito fue diseñado por John Hugenholtz. </p>
+            </div>
+            <div>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_831290-MLM74367156727_022024-O.webp" alt="Circuito de Monza">
+                <p><strong>Monza</strong>:El Autodromo Internazionale di Monza es un autódromo ubicado en el parque de la villa real de Monza en las cercanías de Monza, región de Lombardía, Italia, a unos 33 km al norte de la ciudad de Milán. Es conocido popularmente como el Templo de la Velocidad. </p>
+            </div>
+            <div>
+                <img src="https://onlyposter.it/cdn/shop/files/BAKU.jpg?v=1698707002&width=1445" alt="Circuito de Baku">
+                <p><strong>Baku</strong>: El Circuito callejero de Bakú es un circuito urbano de carreras construido en la ciudad de Bakú, Azerbaiyán, en el Baku Boulevard.​ Acogió el Gran Premio de Europa de 2016 de Fórmula 1. </p>
+            </div>
+            <div>
+                <img src="https://ih1.redbubble.net/image.903795106.2302/fposter,small,wall_texture,product,750x1000.jpg" alt="Circuito de Singapur">
+                <p><strong>Singapur</strong>: El Gran Premio de Singapur es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 disputada anualmente con monoplazas en el circuito callejero de Marina Bay, ubicado en el Consejo de Desarrollo Central de la ciudad-estado de Singapur. </p>
+            </div>
+
+            <div>
+                <img src="https://http2.mlstatic.com/D_965598-MLM77929352734_082024-O.jpg" alt="Circuito de Austin">
+                <p><strong>Austin</strong>: El Circuito de las Américas es un circuito de carreras de 5513 m de longitud que se terminó de construir en el año 2012 en la ciudad texana de Austin, Estados Unidos.</p>
+            </div>
+
+            <div>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_855835-MLM71749653363_092023-O.webp" alt="Circuito de Mexico ">
+                <p><strong>Mexico city</strong>:El Autódromo Hermanos Rodríguez es un autódromo ubicado al oriente de la Ciudad de México, México, dentro del macro complejo Ciudad Deportiva Magdalena Mixhuca, a un par de kilómetros del aeropuerto.​ </p>
+            </div>
+
+
+            <div>
+                <img src="https://racingpoint.cl/cdn/shop/files/WhatsAppImage2024-02-16at23.29.23_1_-Photoroom.jpg?v=1715654956" alt="Circuito de  Sao Paulo">
+                <p><strong>Interlagos</strong>: El Gran Premio de São Paulo es una carrera de automovilismo de velocidad disputada en Brasil desde el año 1972, que ha sido válida para el Campeonato Mundial de Fórmula 1 desde 1973. ​ </p>
+            </div>
+        <div>
+            <img src="https://images.footballfanatics.com/formula-1-merchandise/formula-1-las-vegas-strip-circuit-2023-collectors-edition-poster_ss5_p-200868039+pv-1+u-bx1c5kx9yfnnclukspmh+v-1bfhqpfdsljacbxbxacy.jpg?_hv=2&w=900" alt="Circuito de Las Vegas ">
+            <p><strong>Las Vegas</strong>: El circuito callejero de Las Vegas es un circuito urbano de carreras que se construyó en la ciudad de Las Vegas, Estados Unidos, en Las Vegas Strip. Acoge al Gran Premio de Las Vegas de Fórmula 1 desde 2023.​​ </p>
+        </div>
+        <div>
+        <img src="https://static.displate.com/857x1200/displate/2022-02-16/07473c0078b30549dc84fb0b6602252d_6492b649fdb2b5f38d83c43390f97c08.jpg" alt="Circuito de Qatar ">
+        <p><strong>Qatar</strong>: El circuito Internacional de Losail, también llamado circuito Internacional de Lusail, ​​ es un autódromo de 5,380 metros de longitud ubicado en la ciudad homónima, Qatar, a aproximadamente 28 kilómetros al norte de la capital Doha.​Se construyó en 2004 para albergar el Gran Premio de Qatar de MotoGP. ​ </p>
+    </div>
+
+
+            <div>
+                <img src="https://ih1.redbubble.net/image.4929242660.7206/fposter,small,wall_texture,product,750x1000.jpg" alt="Circuito de Abu Dabi">
+                <p><strong>Abu Dabi</strong>: El Circuito de Yas Marina es conocido por su espectacular infraestructura y su ambiente nocturno.</p>
+            </div>
+        </div>
+
+        <div class="section-bar"></div>
+    </section>
+
+    <!-- Pilotos -->
+    <section id="pilotos">
+        <h2>Pilotos Legendarios de Fórmula 1</h2>
+        <p>La Fórmula 1 ha sido testigo de algunos de los pilotos más extraordinarios de la historia. Aquí te presentamos algunos de los más destacados.</p>
+
+        <div class="f1-pilots">
+            <div>
+                <img src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/story/hero_image/ayrton-senna-f1-1200x800-(2).jpg" alt="Ayrton Senna">
+                <p><strong>Ayrton Senna</strong>: Considerado uno de los más grandes pilotos de todos los tiempos, tres veces campeón del mundo.</p>
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Michael_Schumacher_%28Ferrari%29_-_GP_d%27Italia_1998.jpg" alt="Michael Schumacher">
+                <p><strong>Michael Schumacher</strong>: Con 7 campeonatos mundiales, Schumacher es uno de los pilotos más exitosos de la F1.</p>
+            </div>
+            <div>
+                <img src="https://motociclismo.pt/wp-content/uploads/2025/03/202503202501Lewis-Hamilton-Ferrari-scaled-1.jpeg" alt="Lewis Hamilton">
+                <p><strong>Lewis Hamilton</strong>: Con 7 títulos mundiales, Hamilton es conocido por su destreza técnica y habilidad estratégica.</p>
+            </div>
+            <div>
+                <img src="https://ichef.bbci.co.uk/ace/standard/624/cpsprodpb/159ED/production/_113275588_whatsubject.jpg" alt="Fernando Alonso">
+                <p><strong>Fernando Alonso</strong>: Dos veces campeón del mundo, Alonso es reconocido por su habilidad para adaptarse a cualquier situación.</p>
+            </div>
+            <div>
+                <img src="https://elnuevopais.net/wp-content/uploads/2024/04/VETTEL.jpg" alt="Sebastian Vettel">
+                <p><strong>Sebastian Vettel</strong>: Cuatro veces campeón del mundo, conocido por su gran habilidad en carreras y su enfoque meticuloso.</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-RwR9uJC7cvGGqgxOXDJB7LlceqqQZW2JA&s" alt="Kimi Raikkonnen">
+                <p><strong>Kimi Räikkönen</strong>: Kimi Räikkönen, conocido como "Iceman" por su personalidad tranquila y su estilo de conducción imperturbable su mayor logro fue conquistar el Campeonato Mundial de Pilotos en 2007</p>
+            </div>
+            <div>
+                <img src="https://cdn-7.motorsport.com/images/amp/Y99DD47Y/s1000/charles-leclerc-scuderia-ferra.jpg" alt="Charles Leclerc">
+                <p><strong>Charles Leclerc</strong>: Uno de los pilotos más prometedores de la nueva generación, conocido por su velocidad y valentía.</p>
+            </div>
+        </div>
+
+        <div class="section-bar"></div>
+    </section>
+
+    <!-- Checo Pérez -->
+    <section id="checo">
+        <h2>Checo Pérez  "Never Give Up"</h2>
+    
+        <div class="checo-perez">
+            <div>
+                <img src="https://cdn.clarosports.com/clarosports/2024/05/triunfo-174149-1024x576.jpg" alt="Chequito ">
+                <p><strong>Checo Pérez: El Piloto que Nunca Se Rindió – Never Give Up</strong>: </p>Sergio "Checo" Pérez es la personificación de la perseverancia y la resiliencia en el automovilismo. Desde que empezó su carrera en el karting, hasta llegar a la Fórmula 1, ha enfrentado incontables obstáculos que hubieran hecho que muchos otros se rindieran. Pero Checo nunca dejó que las dificultades definieran su camino. Su historia es la de un piloto que, contra todo pronóstico, nunca se dio por vencido, manteniendo la fe en su talento, trabajando incansablemente y demostrando al mundo que los sueños se pueden hacer realidad si se lucha por ellos con todo el corazón.
+            
+                Desde su debut en la Fórmula 1 en 2011 con Sauber, Checo Pérez ha sido un ejemplo de constancia y determinación. En sus primeros años en la F1, no contaba con el coche más rápido ni con los recursos de los equipos más poderosos, pero eso nunca fue un obstáculo. A pesar de las dificultades, logró destacar con actuaciones sorprendentes, convirtiéndose en un piloto que sabía cómo gestionar la carrera y las condiciones de la pista a su favor. Sin embargo, su verdadero carácter comenzó a forjarse cuando las oportunidades parecían escasas y los resultados no siempre llegaban.
+                
+                A lo largo de su carrera, Checo ha tenido que enfrentar grandes desafíos. Su paso por equipos como McLaren, donde las expectativas eran altas, terminó en frustración debido a la falta de resultados, pero eso no detuvo su avance. En lugar de rendirse, Checo continuó mejorando, aprendiendo y perfeccionando su técnica. Su regreso al equipo Force India (luego Racing Point) fue el punto de inflexión en su carrera, donde su habilidad y mentalidad inquebrantable finalmente empezaron a dar frutos. Checo comenzó a mostrar su verdadera capacidad para luchar contra los mejores, conseguir puntos valiosos y, sobre todo, no rendirse nunca, sin importar cuán difícil fuera la situación.
+                
+                El año 2020 marcó un hito en su carrera cuando finalmente alcanzó la victoria en la Fórmula 1 en el Gran Premio de Sakhir. Partiendo desde la última posición, Checo protagonizó una remontada épica que dejó a todos boquiabiertos. Esa victoria no solo significó un logro personal, sino también un triunfo para todos los que creyeron en él, demostrando que con trabajo duro y una mentalidad de "nunca rendirse", los obstáculos se pueden superar. Fue un momento histórico para el automovilismo mexicano, un testimonio de que las adversidades pueden convertirse en la oportunidad perfecta para brillar.
+                
+                Cuando llegó a Red Bull Racing en 2021, muchos lo veían como el segundo piloto, encargado de apoyar a Max Verstappen en su lucha por el campeonato. Sin embargo, Checo no se conformó con ese papel. Con su talento y perseverancia, luchó por cada posición, se adaptó a las exigencias del equipo y, a pesar de estar en una escudería dominada por Verstappen, consiguió victorias y podios que demostraron su valía. Su victoria en el Gran Premio de Azerbaiyán de 2021 fue otra prueba de su capacidad para nunca rendirse y siempre dar lo mejor de sí, sin importar las circunstancias.
+                
+                El "Never Give Up" es más que un lema para Checo; es una filosofía de vida. En cada carrera, ha demostrado que la clave del éxito no está solo en la habilidad o el talento, sino en la determinación de seguir adelante a pesar de los fracasos, las derrotas y los momentos difíciles. No importa cuántos obstáculos se presenten, Checo siempre ha estado dispuesto a superarlos, aprendiendo de cada experiencia y creciendo como piloto y persona.
+                
+                Fuera de la pista, Checo Pérez ha demostrado ser una fuente de inspiración para millones de personas, no solo en México, sino en todo el mundo. Su humildad, trabajo duro y compromiso con su país lo han convertido en un verdadero ídolo. Su historia es una prueba de que no hay límites cuando se tiene una pasión inquebrantable y la voluntad de seguir adelante, sin importar cuán difícil sea el camino.
+                
+                Checo Pérez, el piloto que nunca se rindió, sigue luchando por más victorias y más logros. Hoy en día, su nombre está grabado en la historia de la Fórmula 1, no solo como un piloto exitoso, sino también como un símbolo de que la perseverancia siempre paga. Su legado es un recordatorio de que, al igual que en la pista, en la vida nunca se debe rendir, porque los sueños pueden cumplirse si seguimos adelante con esfuerzo y determinación.
+                
+                **Nunca te rindas. Sigue luchando. Checo Pérez lo hizo, y mira hasta dónde ha llegado.**​ </p>
+            </div>
+    
+
+        <div class="section-bar"></div>
+    </section>
+      
+    
+    <!-- Historia -->
+    <section id="historia">
+        <h2>Historia de la Fórmula 1</h2>
+        <p>La Fórmula 1 nació en 1950, y desde entonces ha sido testigo de innumerables momentos icónicos. La historia de este deporte está marcada por la competencia feroz, la innovación tecnológica y la pasión de los pilotos y los equipos. La historia de la Fórmula 1 es una de las más fascinantes en el mundo del automovilismo, marcada por innovaciones tecnológicas, rivalidades intensas y momentos de pura emoción. Nació oficialmente en 1950 con la creación del Campeonato Mundial de Pilotos de F1 bajo la organización de la Federación Internacional del Automóvil (FIA). El primer Gran Premio de la historia se celebró en Silverstone, Inglaterra, donde pilotos como Giuseppe Farina, que se coronó campeón ese año, pusieron las bases de lo que sería una de las competiciones más prestigiosas del deporte. A lo largo de los años 50, la F1 comenzó a ganar popularidad en Europa, donde equipos como Alfa Romeo dominaron la escena con coches innovadores para la época. Durante la década de los 60 y 70, la F1 vivió su "edad dorada", marcada por una gran cantidad de avances técnicos, como el desarrollo de nuevos chasis y motores, y la aparición de pilotos legendarios como Jim Clark, Jackie Stewart y Niki Lauda. En estos años, las innovaciones en aerodinámica y seguridad fueron clave para la evolución del deporte, y las competiciones se volvieron cada vez más emocionantes. La rivalidad entre pilotos fue una constante, siendo la lucha por el campeonato una de las más esperadas por los fanáticos de la F1. Ya en los años 80 y 90, los avances tecnológicos se hicieron aún más notables, con la incorporación de motores turboalimentados y una mayor sofisticación en los diseños de los coches. Fue también una época marcada por duelos épicos, como la histórica rivalidad entre Ayrton Senna y Alain Prost, cuyas batallas en la pista dejaron una huella imborrable. Los años 90 trajeron consigo un nuevo dominio de los pilotos de Ferrari, encabezados por Michael Schumacher, quien logró cinco campeonatos consecutivos entre 2000 y 2004, convirtiéndose en uno de los más grandes de todos los tiempos. Durante este periodo, la Fórmula 1 también experimentó una mayor globalización, con un aumento en la cobertura mediática y una mayor cantidad de seguidores a nivel mundial. A medida que se acercaba el siglo XXI, los cambios en las regulaciones y la introducción de motores híbridos en 2014 marcaron una nueva era para la F1. Estos motores híbridos, que combinan motores de combustión interna con unidades de energía eléctrica, transformaron el enfoque hacia la eficiencia energética, sin sacrificar el rendimiento. En la era moderna, Lewis Hamilton se erigió como uno de los dominadores, logrando múltiples títulos mundiales con Mercedes, lo que consolidó su lugar entre los mejores pilotos de la historia. Sin embargo, la F1 sigue siendo un deporte de constante cambio, con nuevas generaciones de pilotos como Max Verstappen, quien logró su primer campeonato en 2021, desafiando el dominio de los grandes campeones del pasado. Hoy en día, la Fórmula 1 continúa siendo un referente mundial de tecnología, velocidad y emoción, con cada temporada ofreciendo nuevas sorpresas y avances en su constante evolución, manteniendo su esencia como una de las competiciones más desafiantes y seguidas del planeta.</p>
+
+        <div class="section-bar"></div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Más información sobre la Fórmula 1 </p>
+        <ul>
+            <li><a href="https://twitter.com/f1">Síguenos en Twitter</a></li>
+        </ul>
+
+        <div class="section-bar"></div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Fórmula 1 - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
